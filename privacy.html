@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Privacy Policy • PDF Chat</title>
+    <meta name="description" content="Privacy Policy for the PDF Chat Chrome extension: how PDF files and chat messages are processed, security, and contacts." />
+    <link rel="icon" href="favicon.ico" />
+    <style>
+        :root {
+            --bg: #0b0c10;
+            --panel: #111318;
+            --panel-2: #151923;
+            --text: #e6e9ef;
+            --muted: #a7b0bd;
+            --brand: #6aa7ff;
+            --brand-2: #7bdcb5;
+            --border: #1f2530;
+            --shadow: rgba(0, 0, 0, 0.35);
+        }
+
+        * { box-sizing: border-box; }
+
+        html, body {
+            margin: 0;
+            padding: 0;
+            color: var(--text);
+            background: radial-gradient(1000px 600px at 10% -20%, rgba(106,167,255,0.08), transparent 60%),
+                        radial-gradient(1000px 600px at 90% -20%, rgba(123,220,181,0.08), transparent 60%),
+                        var(--bg);
+            font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, Cantarell, "Helvetica Neue", Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 24px;
+        }
+
+        .card {
+            background: linear-gradient(180deg, var(--panel), var(--panel-2));
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            box-shadow: 0 10px 30px var(--shadow);
+            overflow: hidden;
+        }
+
+        header.hero {
+            padding: 40px 28px 24px 28px;
+            border-bottom: 1px solid var(--border);
+            background:
+                radial-gradient(600px 180px at 20% 0%, rgba(106,167,255,0.12), transparent 60%),
+                radial-gradient(600px 180px at 80% 0%, rgba(123,220,181,0.12), transparent 60%);
+        }
+
+        .badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 6px 12px;
+            border-radius: 999px;
+            background: rgba(106,167,255,0.12);
+            border: 1px solid rgba(106,167,255,0.3);
+            color: var(--text);
+            font-weight: 600;
+            font-size: 12px;
+            letter-spacing: .02em;
+            text-transform: uppercase;
+        }
+
+        h1 {
+            margin: 14px 0 8px 0;
+            font-size: 32px;
+            line-height: 1.25;
+        }
+
+        .subtitle {
+            margin: 0 0 8px 0;
+            color: var(--muted);
+        }
+
+        .updated {
+            color: var(--muted);
+            font-size: 14px;
+        }
+
+        main { padding: 8px 28px 28px 28px; }
+
+        section {
+            padding: 20px 0;
+            border-bottom: 1px dashed var(--border);
+        }
+
+        section:last-child { border-bottom: 0; }
+
+        h2 {
+            margin: 0 0 8px 0;
+            font-size: 20px;
+        }
+
+        p { margin: 8px 0 0 0; }
+
+        ul {
+            margin: 8px 0 0 18px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px 24px;
+        }
+
+        .callout {
+            padding: 14px 14px;
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            background: rgba(123,220,181,0.06);
+        }
+
+        a { color: var(--brand); text-decoration: none; }
+        a:hover { text-decoration: underline; }
+
+        footer {
+            color: var(--muted);
+            margin-top: 16px;
+            font-size: 14px;
+            padding: 0 28px 24px 28px;
+        }
+
+        @media (max-width: 760px) {
+            .grid { grid-template-columns: 1fr; }
+            header.hero { padding: 28px 20px 18px 20px; }
+            main { padding: 6px 20px 20px 20px; }
+            footer { padding: 0 20px 20px 20px; }
+        }
+    </style>
+    <!-- No external trackers. All styling is inline for portability. -->
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <header class="hero">
+                <span class="badge">PDF Chat • Privacy</span>
+                <h1>Privacy Policy</h1>
+                <p class="subtitle">We designed PDF Chat with your privacy in mind. This page explains what data the extension processes and how it is used.</p>
+                <p class="updated">Last updated: September 29, 2025</p>
+            </header>
+
+            <main>
+                <section>
+                    <h2>Overview</h2>
+                    <p>
+                        PDF Chat is a Chrome extension that lets you upload PDF files, extract text, and have an intelligent conversation about the document’s content. Text extraction is performed locally in your browser using the PDF.js library. Data is only sent to the AI service when you explicitly initiate a chat or ask a question.
+                    </p>
+                </section>
+
+                <section class="grid">
+                    <div>
+                        <h2>Data We Process</h2>
+                        <ul>
+                            <li>Text from the PDF files you upload, required to answer your question.</li>
+                            <li>Your chat messages and contextual snippets from the document to generate a response.</li>
+                            <li>Local extension preferences (e.g., theme and interface settings).</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h2>What We Do <em>Not</em> Collect</h2>
+                        <ul>
+                            <li>Passwords or account credentials.</li>
+                            <li>Form inputs, payment information, or other personal identifiers.</li>
+                            <li>Background tracking or your browsing history.</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section>
+                    <h2>How Your Data Is Used</h2>
+                    <p>
+                        When you ask a question, the extension locally extracts relevant text from the PDF, composes a request, and sends it to the AI service at <code>https://text.pollinations.ai/openai</code> to generate a response. The data is used solely to produce the requested answer and is not used by the extension for advertising or profiling.
+                    </p>
+                    <div class="callout">
+                        The extension does not store extracted PDF content on our servers. Interface settings and preferences are stored locally/synchronously in Chrome Storage and can be cleared by you at any time.
+                    </div>
+                </section>
+
+                <section class="grid">
+                    <div>
+                        <h2>Sharing and Retention</h2>
+                        <ul>
+                            <li>Data is shared only with the AI endpoint at <code>https://text.pollinations.ai/openai</code> when you request an answer.</li>
+                            <li>The extension does not retain PDF content after a response is produced.</li>
+                            <li>Local settings are stored in Chrome Storage and can be cleared at any time.</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h2>Security</h2>
+                        <ul>
+                            <li>Network communication with the AI service uses HTTPS.</li>
+                            <li>No third‑party trackers or analytics are embedded in the extension.</li>
+                            <li>Data processing occurs only in response to your explicit action.</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section>
+                    <h2>Your Choices</h2>
+                    <ul>
+                        <li>You can disable or remove the extension at any time.</li>
+                        <li>You can clear extension data via Chrome’s site data settings or by using “Clear browsing data”.</li>
+                        <li>You can choose not to initiate a chat for documents you prefer not to process.</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Third‑Party Services</h2>
+                    <p>
+                        Responses are generated by the service at <code>https://text.pollinations.ai/openai</code>. Please refer to that service’s own privacy policy for its data practices. PDF Chat does not control third‑party retention once data is transmitted for response generation.
+                    </p>
+                </section>
+
+                <section>
+                    <h2>Children’s Privacy</h2>
+                    <p>
+                        The extension is not directed to children under 13 and does not knowingly process personal information from children.
+                    </p>
+                </section>
+
+                <section>
+                    <h2>Changes to This Policy</h2>
+                    <p>
+                        We may update this policy from time to time. Material changes will be reflected on this page with an updated “Last updated” date.
+                    </p>
+                </section>
+
+                <section>
+                    <h2>Contact</h2>
+                    <p>
+                        For questions or requests related to this policy, contact the developer at <a href="mailto:n1katuuun@gmail.com">n1katuuun@gmail.com</a>.
+                    </p>
+                </section>
+            </main>
+
+            <footer>
+                © PDF Chat. This page contains no third‑party scripts.
+            </footer>
+        </div>
+    </div>
+</body>
+<!-- End of Privacy Policy -->
+</html>
+
